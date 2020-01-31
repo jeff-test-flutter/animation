@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/custom_clipper.dart';
+import 'package:flutter_app/ui_widget/dynamic_rating_bar.dart';
+import 'package:flutter_app/ui_widget/static_rating_bar.dart';
 
 class MyHome3Page extends StatefulWidget {
   @override
@@ -32,9 +34,7 @@ class _MyHome3PageState extends State<MyHome3Page> {
                 _buildRow1RightWidget(),
               ],
             ),
-            Container(
-              height: 10,
-            ),
+            Container(height: 10),
             Row(
               children: <Widget>[
                 _buildRow2LeftWidget(),
@@ -43,7 +43,14 @@ class _MyHome3PageState extends State<MyHome3Page> {
                 ),
                 _buildRow2RightWidget(),
               ],
-            )
+            ),
+            Container(height: 10),
+            StaticRatingBar(
+              size: 60.0,
+              rate: 4.6,
+            ),
+            Container(height: 10),
+            DynamicRatingBar(size: 60.0,),
           ],
         ),
       ),
