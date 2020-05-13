@@ -50,7 +50,9 @@ class _MyHome3PageState extends State<MyHome3Page> {
               rate: 4.6,
             ),
             Container(height: 10),
-            DynamicRatingBar(size: 60.0,),
+            DynamicRatingBar(
+              size: 60.0,
+            ),
           ],
         ),
       ),

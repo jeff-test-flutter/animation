@@ -21,6 +21,6 @@ class MyApp extends StatelessWidget {
     final myHome1Page = MyHome1Page();
     final myHome2Page = MyHome2Page();
     final myHome3Page = MyHome3Page();
-    return MaterialApp(home: myHome3Page);
+    return MaterialApp(home: myHome2Page);
   }
 }
